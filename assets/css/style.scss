@@ -47,11 +47,12 @@ a.navbar-item.is-active {
 
     &::before {
         filter: blur(0.15rem);
-        background-image: url({{site.heroimage}});
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-attachment: fixed;
+        background-color:  #b17530c5;
+        //background-image: url({{site.heroimage}});
+        //background-position: center;
+        //background-repeat: no-repeat;
+        //background-size: cover;
+        //background-attachment: fixed;
         top: 0px;
         right: 0px;
         bottom: 0px;

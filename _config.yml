@@ -9,7 +9,7 @@ baseurl:
 # Title of the Site
 title: Jestor
 # Description of the Site
-description: A customizable Jekyll portfolio theme
+description: Generalist computer programmer
 # URL of Image of the Site
 site-image: /WhatATheme/assets/images/meta.jpg
 # Keywords of the Site
@@ -39,7 +39,10 @@ author-name: jestor
 # URL for the Image of the Author
 author-image: https://pbs.twimg.com/profile_images/1464076803618840579/mlqmZAEd_400x400.jpg
 # 60 Words About the Author
-author-about: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse eget pharetra velit, dapibus bibendum ex. Maecenas vitae laoreet mauris, ac luctus metus. Aliquam luctus velit vel ipsum feugiat, vel venenatis mauris hendrerit. Sed at vulputate sapien, eget vehicula dolor. Aliquam volutpat pulvinar neque sit amet sodales.
+author-about: CS major with knowledge of web development, algorithms, programming in JavaScript, Python and C++, mainly interested in the development of image processing and web applications . Have participated as a research assistant in the BigData-HCP lab at CTIC-UNI.
+
+author-photo: https://i.ibb.co/0qTTLLS/211850379-281116963518070-4538751556002345327-n.jpg
+
 # URL to the Author's Profile (i.e., Github, Twitter, Stackoverflow, etc)
 author-url: https://github.com/jestor
 
