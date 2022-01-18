@@ -9,13 +9,13 @@ baseurl:
 # Title of the Site
 title: Jestor
 # Description of the Site
-description: Generalist computer programmer
+description: Software Maker
 # URL of Image of the Site
 site-image: /WhatATheme/assets/images/meta.jpg
 # Keywords of the Site
-site-keywords: Site, Template, Theme
+site-keywords: Portfolio, software development, programming
 # URL for the Image of custom Favicon
-favicon-url: 
+favicon-url: /favicon_io/favicon-32x32.png
 
 # URL of the Image of Custom Hero Image (i.e., the image in the background of the very first section of the Homepage)
 heroimage: https://c4.wallpaperflare.com/wallpaper/87/197/280/digital-art-low-poly-geometry-minimalism-wallpaper-preview.jpg
@@ -39,7 +39,7 @@ author-name: jestor
 # URL for the Image of the Author
 author-image: https://pbs.twimg.com/profile_images/1464076803618840579/mlqmZAEd_400x400.jpg
 # 60 Words About the Author
-author-about: CS major with knowledge of web development, algorithms, programming in JavaScript, Python and C++, mainly interested in the development of image processing and web applications . Have participated as a research assistant in the BigData-HCP lab at CTIC-UNI.
+author-about: CS major with knowledge of web development, algorithms, programming in JavaScript, Python and C++, mainly interested in the development of image processing and web applications . I've participated as a research assistant in the BigData-HCP lab at CTIC-UNI.
 
 author-photo: https://i.ibb.co/0qTTLLS/211850379-281116963518070-4538751556002345327-n.jpg
 
