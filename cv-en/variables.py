@@ -103,14 +103,14 @@ image_variables = {
 }
 
 links_variables = {
-    'link_1': 'assets/images/favicon.ico',
-    'link_2': 'assets/css/vendor/bootstrap.min.css',
-    'link_3': 'assets/css/vendor/slick.css',
-    'link_4': 'assets/css/vendor/slick-theme.css',
-    'link_5': 'assets/css/vendor/aos.css',
-    'link_6': 'assets/css/plugins/feature.css',
-    'link_7': 'assets/css/style.css',
-    'link_8': 'style.css',
+    'links_1': 'assets/images/favicon.ico',
+    'links_2': 'assets/css/vendor/bootstrap.min.css',
+    'links_3': 'assets/css/vendor/slick.css',
+    'links_4': 'assets/css/vendor/slick-theme.css',
+    'links_5': 'assets/css/vendor/aos.css',
+    'links_6': 'assets/css/plugins/feature.css',
+    'links_7': 'assets/css/style.css',
+    'links_8': 'style.css',
 }
 
 script_variables = {

@@ -3,7 +3,7 @@ import sys
 import importlib.util
 from jinja2 import Template
 
-def render_template(folder_name):
+def render_template(folder_name , asset_location_prefix):
     # Paths and filenames
     template_file = os.path.join(folder_name, 'template.jinja')
     variables_file = os.path.join(folder_name, 'variables.py')
@@ -46,8 +46,8 @@ def render_template(folder_name):
         if hasattr(variables_module, dict_name):
             var_dict = getattr(variables_module, dict_name)
             if isinstance(var_dict, dict):
-                if dict_name in {"image_variables", "links_variables", "script_variables"}:
-                    prefix_values(var_dict, "../")
+                if asset_location_prefix  and dict_name in {"image_variables", "links_variables", "script_variables"}:
+                    prefix_values(var_dict, asset_location_prefix)
                 combined_variables.update(var_dict)
 
     # Read the Jinja template
@@ -71,13 +71,16 @@ def prefix_values(var_dict, prefix):
         if isinstance(value, str):
             var_dict[key] = prefix + value
 if __name__ == '__main__':
-    if len(sys.argv) != 2:
-        print("Usage: python script.py <folder_name>")
+    if len(sys.argv) < 2 or len(sys.argv) > 3:
+        print("Usage: python script.py <folder_name> [prefix]")
         sys.exit(1)
 
     folder_name = sys.argv[1]
+    # If a second argument is provided, use it as prefix; otherwise, prefix is empty
+    prefix = sys.argv[2] if len(sys.argv) == 3 else ""
+
     try:
-        render_template(folder_name)
+        render_template(folder_name, prefix)
     except Exception as e:
         print(f"Error: {e}")
         sys.exit(1)
