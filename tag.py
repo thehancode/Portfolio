@@ -79,7 +79,7 @@ def html_to_jinja(input_html_path: str,
 
     link_variables = extract_and_replace_attribute(soup, 'a', 'href', var_prefix='link_', starting_count=1)
     image_variables = extract_and_replace_attribute(soup, 'img', 'src', var_prefix='img_', starting_count=1)
-    links_variables = extract_and_replace_attribute(soup, 'link', 'href', var_prefix='link_', starting_count=1)
+    links_variables = extract_and_replace_attribute(soup, 'link', 'href', var_prefix='links_', starting_count=1)
     script_variables = extract_and_replace_attribute(soup, 'script', 'src', var_prefix='script_', starting_count=1)
 
     # Generate the Jinja template from the modified soup
