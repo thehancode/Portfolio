@@ -1,6 +1,7 @@
 import sys
 from bs4 import BeautifulSoup, Comment, Doctype
-
+import os 
+import shutil 
 def html_to_jinja(input_html_path: str,
                   output_jinja_path: str,
                   output_text_vars_path: str,
@@ -123,21 +124,27 @@ def html_to_jinja(input_html_path: str,
     print(f"  Link vars: {output_link_vars_path}")
     print(f"  Image vars: {output_img_vars_path}")
 
-
 if __name__ == "__main__":
     """
     Example usage:
-    python script.py input.html output_template.jinja text_vars.py link_vars.py image_vars.py
+    python script.py input.html output_folder
     """
-    if len(sys.argv) < 6:
-        print("Usage: python script.py <input_html> <output_jinja> <output_text_vars> <output_link_vars> <output_img_vars>")
+    if len(sys.argv) < 3:
+        print("Usage: python script.py <input_html> <output_folder>")
         sys.exit(1)
 
     input_html_path = sys.argv[1]
-    output_jinja_path = sys.argv[2]
-    output_text_vars_path = sys.argv[3]
-    output_link_vars_path = sys.argv[4]
-    output_img_vars_path = sys.argv[5]
+    output_folder = sys.argv[2]
+
+    # Remove the folder if it exists and create a new one
+    if os.path.exists(output_folder):
+        shutil.rmtree(output_folder)
+    os.makedirs(output_folder, exist_ok=True)
+
+    output_jinja_path = os.path.join(output_folder, "template.jinja")
+    output_text_vars_path = os.path.join(output_folder, "text.jinja")
+    output_link_vars_path = os.path.join(output_folder, "links.jinja")
+    output_img_vars_path = os.path.join(output_folder, "imgs.jinja")
 
     html_to_jinja(
         input_html_path,
